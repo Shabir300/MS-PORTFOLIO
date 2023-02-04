@@ -1,0 +1,797 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+
+
+:root {
+    --primary-color: #F89500;
+    --secondary-color: #ABB2BF;
+    --third-color: #1E1E1E;
+}
+
+body {
+    background-color: #1E1E1E;
+    color: white;
+    font-family: 'Fira Code', monospace;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+.container_1-description button {
+    display: none;
+}
+
+
+/* ---------- */
+/*  CONTAINER 1 */
+/* ---------- */
+
+.container_1 {
+    /* margin-inline: clamp(1rem, 5%, 15vw); */
+    position: static;
+    width: 100%;
+    height: auto;
+}
+
+.container_1-content {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5vw;
+    padding-block: 4rem;
+    gap: 5rem;
+    margin:0;
+}
+
+header  {
+    padding-top: 1rem;
+    /* position: absolute; */
+    width: 100%;
+    padding-inline: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+nav {
+   
+    position: absolute;
+    width: 14rem;
+    top: 100%;
+    right: 2rem;
+    background: var(--primary-color);
+    z-index: 1;
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path 0.4s ease-in-out;
+}
+
+nav ul {
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* margin-right: 10rem; */
+}
+
+nav ul li {
+    /* justify-self: flex-end; */
+    list-style-type: none;
+    /* width: 100%; */
+    text-align: center;
+}
+
+nav ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: var(--third-color);
+   
+}
+
+nav ul li a span {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+nav ul li:hover {
+    background: var(--third-color);
+   
+}
+
+
+
+.container_1 .logo {
+    width: 6rem;
+}
+
+.fa-solid {
+    font-size: 2rem;
+}
+
+.container_1-description p {
+    padding-block: 3rem;
+}
+
+.container_1-description button {
+    display: block;
+    background: none;
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 16px 23px;
+    font-size: 1em;
+    font-family: 'Fira Code';
+    transition: 0.3s ease-in-out;
+}
+
+.container_1-description button:hover {
+    background: var(--primary-color);
+    color: #1E1E1E;
+}
+
+.container_1-description span {
+    color: var(--primary-color);
+}
+
+
+.container_1-description p {
+    color: var(--secondary-color);
+}
+
+
+.main-image {
+    width: 100%;
+}
+
+
+.person {
+    position: relative;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+
+
+.box {
+    border: 1px solid var(--secondary-color);
+    
+    /* padding: 1em 5em 1em 1em; */
+    padding: 0.5em;
+}
+
+
+.box {
+    padding-left: 3rem;
+    position: relative;
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+    width: 1rem;
+    aspect-ratio: 1 / 1;
+    padding-block: auto;
+    left: 1rem;
+}
+
+
+/* CONTAINER 2 */
+
+.container_2 {
+    display: none;
+    width: 100%;
+    height: 100vh;
+}
+
+/* --------- */
+
+
+.projects-header,
+.skills-header,
+.about-me-header,
+.contacts-header {
+    width:fit-content;
+    padding-right: auto;
+    position: relative;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.projects-header:after,
+.skills-header:after,
+.about-me-header:after,
+.contacts-header:after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 50%;
+    left: 105%;
+    background: var(--primary-color);
+
+}
+
+
+
+
+
+/* CONTAINER 3 */
+
+.projects {
+    padding-inline: 5vw;
+    padding-block: 4rem;
+    position: relative;
+    top: 0;
+}
+
+.hashtag {
+    color: var(--primary-color);
+}
+
+.projects-header {
+    margin-bottom: 2rem;
+   
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.project {
+    width: 330px;
+    height:390.4px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--secondary-color);
+}
+
+.project img {
+    /* background: white; */
+    /* border: 1px solid white; */
+    width: auto;
+    margin-inline: auto;
+    height: 200.96px;
+    align-self: flex-start;
+}
+
+.project .first-p {
+    border: 1px solid white;
+    border-left: none;
+    border-right: none;
+    padding: 8px;
+    color: var(--secondary-color);
+}
+
+.project h3 {
+    padding: 16px;
+    padding-bottom: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    font-family: 'Fira Code';
+    font-style: normal;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.second-p {
+    padding: 16px;
+    color: var(--secondary-color);
+
+}
+
+.status {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    /* margin-left: 1rem; */
+    /* overflow: hidden; */
+}
+
+.status p {
+    border: 1px solid var(--primary-color);
+    width: fit-content;
+    padding: 7px 16px;
+    margin-inline: auto;
+}
+
+
+
+
+/* CONTAINER 4 // SKILLS */
+
+
+.skills {
+    padding-inline: 5vw;
+    padding-block: 4rem;
+    /* position: absolute; */
+    /* why this makes things overflow */
+    /* position: relative; */
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.skills-header {
+    margin-bottom: 3rem;
+}
+
+.skills-header h2 {
+    font-size: 50px;
+}
+
+.skills-designImage {
+    display: none;
+}
+
+.skills-realContainer {
+    /* display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+.skill {
+    margin-inline: auto;
+    width: 178px;
+    border: 1px solid var(--secondary-color);
+}
+
+.skill h3 {
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 6px 8px;
+    
+}
+
+
+.skill p {
+    color: var(--secondary-color);
+    padding: 6px 8px;
+    line-height: 150%;
+}
+
+
+/* ABOUT ME */
+
+.about-me {
+    padding-inline: 5vw;
+    padding-block: 4rem;
+    /* position: static; */
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    margin-block: 3rem;
+}
+
+.about-me-header {
+    font-size: 1.5rem;
+}
+
+.about-me .content p {
+    color: var(--secondary-color);
+}
+
+
+.about-me-image {
+    display: grid;
+    place-items: center;
+    height: 25rem;
+    width: auto;;
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 3rem;
+    margin-inline: auto;
+}
+
+.about-me .content {
+    line-height: 170%;
+    font-size: 1.1rem;
+    text-align: start;
+}
+
+.about-me .content button {
+    background: none;
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    font-family: 'Fira Code';
+    margin-left: 25vw;
+    margin-top: 3rem;
+    /* margin: 3rem; */
+}
+
+.about-me .content button:hover {
+    background: var(--primary-color);
+    color: var(--third-color);
+}
+
+
+
+/* CONTACT */
+
+.contacts {
+    padding-inline: 5vw;
+    padding-block: 4rem;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.contacts-header {
+    font-size: 1.5rem;
+}
+
+
+.contact-text {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.message {
+    /* border: 1px solid var(--secondary-color); */
+    background: rgba(27, 24, 24, 0.669);
+    width: fit-content;
+    padding: 16px 20px;
+    margin-inline: auto;
+    margin-block: 3rem;
+    height: 100%;
+   
+    
+}
+
+.message form {
+    display: grid;
+    grid-template: 20% 20% 40% 20% / 1fr 1fr;
+    
+}
+
+
+
+
+.message form textarea {
+    resize: none;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.message form input, textarea {
+    padding: .5em 1em;
+    background: none;
+    margin-block: 1em;
+    border: 1px solid var(--secondary-color);
+    font-family: 'Fira Code', sans-serif;
+    
+}
+
+.message form input:focus, textarea:focus {
+    outline: 1px solid var(--primary-color);
+    border: none;
+    color: var(--primary-color);
+}
+
+.message form button {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    margin-top: 1em;
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+    text-transform:uppercase;
+    font-family: 'Fira Code', sans-serif;
+}
+
+.message form button:hover {
+    background: var(--primary-color);
+    color:#1E1E1E;
+}
+
+.message form #phone {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.message form #text {
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+}
+
+.message form #name {
+    margin-right: .5rem;
+}
+
+.message * {
+    padding-block: .5rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid white;
+    width: 100%;
+    height: auto;
+}
+
+.footer-colLeft {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-colLeft * {
+    padding-block: .8rem;
+}
+
+.footer-colLeft img {
+    width: 3rem;
+    margin-inline: auto;
+}
+
+
+.footer-colLeft p {
+    color: var(--secondary-color);
+    
+}
+
+.footer-colRight {
+    margin-left: 40vw;
+    margin-bottom: 3rem;
+}
+
+.footer-colRight h3 {
+    
+    font-size: 1.6rem;
+}
+
+.footer-colRight div i {
+    margin-top: 5px;
+    color: var(--secondary-color);
+}
+
+.footer-colRight * {
+    padding: .1rem;
+    
+}
+
+
+.footer-colLeft {
+    padding-block: 2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0;
+}
+
+.footer-colRight {
+    padding-bottom: 2rem;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.copyright {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+    html {
+        font-size: 20px;
+    }
+
+/* 
+    .skills-header,
+    .about-me-header,
+    .contacts-header {
+
+    margin-left: -5rem;
+    padding-left: -5rem;
+} */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .container_1 {
+        height: 100vh;
+        padding-block: auto;
+    }
+    .container_1-content {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .container_1-description {
+        position: relative;
+        top: 8rem;
+        width: 40rem;
+        align-self: flex-start;
+    } 
+
+    .container_1-description p {
+        padding-block: 3.5rem;
+    }
+
+    .container_1-description button {
+        display: block;
+        background: none;
+        color: white;
+        border: 1px solid var(--primary-color);
+        padding: 16px 23px;
+        font-size: 1em;
+        font-family: 'Fira Code';
+        transition: 0.3s ease-in-out;
+    }
+
+    .container_1-description button:hover {
+        background: var(--primary-color);
+        color: #1E1E1E;
+    }
+
+
+    .main-image {
+        align-self: flex-start;
+        width: 35rem;
+    }
+
+
+    /* projects */ 
+
+    .project {
+        height: 420px;
+    }
+
+    .project .status {
+        font-size: 16px;
+    }
+    
+
+    /* skills */
+
+    .skill {
+        height: fit-content;
+    }
+
+    .skills-container {
+        display: flex;
+        gap: 5rem;
+        justify-content: center;
+    }
+
+    
+
+    .skills-realContainer {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    .skills {
+        padding-inline: 10vw;
+        padding-block: 4rem;
+    }
+
+    .skills-header {
+        margin-left: -3rem;
+
+    }
+ 
+    .about-me .content button{
+        margin-inline: auto;
+    }
+
+
+    
+
+    
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .menu-icon {
+        display: none;
+    }
+
+    nav {
+        position: unset;
+        top: unset;
+        width: unset;
+        right: unset;
+        z-index: unset;
+        background: unset;
+        clip-path: unset;
+        /* width: auto; */
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    nav ul li {
+        width: unset;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul li a span {
+        color: var(--primary-color);
+    }
+
+    .skills-designImage {
+        display: unset;
+        height: 100%;
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+
+    /* .contact-text {
+        width: 25rem;
+        margin: 0;
+    } */
+
+    /* .message {
+        margin: 0;
+        position: relative;
+        left: 100%;
+        margin-top: -5rem;
+    } */
+    
+    .message {
+        float: right;
+    }
+
+   
+
+
+}

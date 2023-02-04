@@ -1,0 +1,5 @@
+1) why is .box not padding-block auto to get centered??
+
+2) why is html font-size increment upon the media query 
+increases the size of px of the project divs?
+
